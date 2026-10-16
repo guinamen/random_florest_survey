@@ -1,0 +1,22 @@
+Package: rfdesenho
+Type: Package
+Title: Florestas Aleatórias para Dados de Pesquisas com Desenho Amostral Complexo
+Version: 0.1.0
+Authors@R: person("Guilherme", "Namen", email = "guilherme.namen@gmail.com",
+                  role = c("aut", "cre"))
+Description: Arquitetura modular para ajustar florestas aleatórias em dados de
+    pesquisas amostrais complexas (estratos, unidades primárias de amostragem,
+    pesos, calibração, pesos replicados). Separa o desenho (objeto canônico),
+    a estratégia de reamostragem (iid, bootstrap ponderado, Rao-Wu, Rao-Wu com
+    bootstrap ponderado, réplicas do órgão produtor) e o motor de árvores
+    (ranger ou árvore Hájek própria). Inclui diagnóstico do desenho com regras
+    de decisão, erro fora-da-bolsa agrupado por UPA, incerteza por florestas
+    réplica, saídas ponderadas e uma suíte de conformidade com dados sintéticos
+    de verdade conhecida.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: stats, parallel
+Suggests: ranger (>= 0.14), survey, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
